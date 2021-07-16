@@ -1,17 +1,25 @@
 <!doctype html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.min.css">
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.min.css">
     <style>
         :root{
             --background-body: #2e3440
         }
+        .icon{
+          color:white
+        }
+        .icon:hover {
+          color: #41adff
+        }
     </style>
   </head>
   <body>
-    {% include navigation.html %}
+    <header style="display: flex;">
+      {% include navigation.html %}
+    </header>
     <hr>
     {{ content }}
   </body>
