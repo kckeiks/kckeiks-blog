@@ -2,13 +2,23 @@
 layout: default
 title: KcRose Blog
 ---
-<h1>Latest Posts 2021</h1>
-
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      {{ post.excerpt }}
-    </li>
-  {% endfor %}
-</ul>
+<section>
+  <h3>Hello</h3>
+  <p>
+    Welcome to kckeiks. I'm <a href="/about.html">Miguel</a> and this is my blog. 
+    I like to write about things that I learn and tutorials - mostly technology related stuff.
+  </p>
+</section>
+<section>
+  <h1>Latest Posts 2021</h1>
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <h2>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </h2>
+        {{ post.excerpt }}
+      </li>
+    {% endfor %}
+  </ul>
+</section>
